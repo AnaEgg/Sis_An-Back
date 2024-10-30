@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+    </header>
+
+    <main>
+        <form id="form-producto">
+            <input id="nom_producto" type="text" name="nombre" placeholder="Nombre" required>
+            <input id="tipo_producto" type="text" name="tipo" placeholder="Tipo" required>
+            <input id="cant_total" type="number" name="cantidad" placeholder="Cantidad" required>
+            <input id="precio_mayor" type="number" name="precioMayor" placeholder="Precio Mayor" required>
+            <input id="precio_menor" type="number" name="precioMenor" placeholder="Precio Menor" required>
+            <input id="stock" type="number" name="stock" placeholder="Stock" required>
+            <input id="perecible" type="text" name="perecible" placeholder="Perecible (Sí/No)" required>
+            <input id="unid_medida" type="text" name="unidadMedida" placeholder="Unidad de Medida" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+        
+        <table id="productos-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Precio Mayor</th>
+                    <th>Precio Menor</th>
+                    <th>Stock</th>
+                    <th>Perecible</th>
+                    <th>Unidad de Medida</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </main>
+
+    <script src="js/productos.js"></script>
+    <script src="js/product2.js"></script>
+</body>
+</html>
